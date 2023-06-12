@@ -67,7 +67,7 @@ func main() {
 	//}
 	//r.POST("/login",func(c *geeServer.Context))
 
-	//html使用
+	//html使用1
 	r := geeServer.New()
 	r.Use(geeServer.Logger())
 	r.SetFuncMap(template.FuncMap{
