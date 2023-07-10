@@ -92,6 +92,11 @@ func main() {
 			"now":   time.Date(2019, 8, 17, 0, 0, 0, 0, time.UTC),
 		})
 	})
+	r.GET("/ball", func(c *geeServer.Context) {
+		c.HTML(http.StatusOK, "index.html", geeServer.H{
+			"title": "ballGame",
+		})
+	})
 
 	r.Run(":8080")
 
